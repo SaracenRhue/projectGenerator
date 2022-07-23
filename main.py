@@ -12,7 +12,17 @@ print('What is the name of the project?')
 pro_name = str(input('> '))
 
 #project types
-projects = {'static site':['Webdevelopment/', 'git clone https://github.com/SaracenRhue/HTML-boilerplate.git '+pro_name], 'nodejs':['Webdevelopment/','mkdir '+pro_name+' && cd '+pro_name+' && touch app.js && npm init -y'], 'react':['Webdevelopment/React/','npx create-react-app '+pro_name],'electron':['electron/','npx create-electron-app@latest '+pro_name], 'docker':['docker/','cmd'], 'python':['Python/','mkdir '+pro_name+' && cd '+pro_name+' touch main.py'], 'bash':['bash/','mkdir '+pro_name+' && cd '+pro_name+' touch script.sh && echo "#!/bin/bash" >> script.sh'], 'cpp':['cpp/', 'git clone https://github.com/SaracenRhue/cpp-boilerplate.git '+pro_name]}
+projects = {\
+    'static site':['Webdevelopment/', 'git clone https://github.com/SaracenRhue/HTML-boilerplate.git '+pro_name],\
+    'nodejs':['Webdevelopment/','mkdir '+pro_name+' && cd '+pro_name+' && touch app.js && npm init -y'],\
+    'react':['Webdevelopment/React/','npx create-react-app '+pro_name],\
+    'electron':['electron/','npx create-electron-app@latest '+pro_name],\
+    'docker':['docker/','cmd'],\
+    'python':['Python/','mkdir '+pro_name+' && cd '+pro_name+' touch main.py'],\
+    'bash':['bash/','mkdir '+pro_name+' && cd '+pro_name+' touch script.sh && echo "#!/bin/bash" >> script.sh'],\
+    'cpp':['cpp/', 'git clone https://github.com/SaracenRhue/cpp-boilerplate.git '+pro_name]\
+        }
+
 keys = list(projects.keys()) #array of dict keys
 
 for item in keys:
