@@ -1,6 +1,6 @@
 from os import system as cmd
 
-cmd('echo "\x1b[31m"')
+cmd('echo "\x1b[31m"') # Red
 cmd('clear')
 
 print("  __              __                ")
@@ -39,6 +39,7 @@ path = '/Users/richardkammermeier/Nextcloud/Programming/'
 path = path + pro_type[0]
 create_cmd = pro_type[1]
 
+cmd('echo "\x1b[35m"') # Magenta
 cmd('cd '+path+' && '+create_cmd)
 
 if 'github' in create_cmd:
@@ -46,8 +47,8 @@ if 'github' in create_cmd:
 
 cmd('code ' +path+pro_name) #open in VS Code
 
-cmd('echo "\x1b[39m"')
+cmd('echo "\x1b[32m"') # Green
 print("  __  __      ___ ")
 print(" /  )/  )/| )(_   ")
 print("/(_/(__// |/ /__  ")
-cmd('echo "\x1b[39m"')
+cmd('echo "\x1b[39m"') # default color
