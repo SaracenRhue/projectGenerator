@@ -1,12 +1,13 @@
 from os import system as cmd
 
+cmd('echo "\x1b[31m"')
 cmd('clear')
 
 print("  __              __                ")
 print(" /__)_   '_ __/  / _ _   _ _ __/  _ ")
 print("/   / ()/(-( /  (__)(-/)(-/ (//()/  ")
 print("      _/                            ")
-print("                                    ")
+cmd('echo "\x1b[39m"')
 
 print('What is the name of the project?')
 pro_name = str(input('> '))
@@ -45,6 +46,8 @@ if 'github' in create_cmd:
 
 cmd('code ' +path+pro_name) #open in VS Code
 
+cmd('echo "\x1b[39m"')
 print("  __  __      ___ ")
 print(" /  )/  )/| )(_   ")
 print("/(_/(__// |/ /__  ")
+cmd('echo "\x1b[39m"')
