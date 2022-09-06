@@ -1,5 +1,7 @@
 from os import system as cmd
 
+path = '/Users/saracenrhue/Nextcloud/Programming/'
+
 cmd('echo "\x1b[31m"') # Red
 cmd('clear')
 
@@ -35,7 +37,7 @@ pro_type = int(input('> '))
 pro_type = keys[pro_type]
 pro_type = projects.get(pro_type) 
 
-path = '/Users/richardkammermeier/Nextcloud/Programming/'
+
 path = path + pro_type[0]
 create_cmd = pro_type[1]
 
