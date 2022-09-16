@@ -18,6 +18,7 @@ Just type `pg` in your terminal and follow the prompts.
 
 create boilerplates for:
 
+* bash script
 * C++ projects
 * Docker projects
 * Python projects
