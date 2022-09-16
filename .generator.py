@@ -21,8 +21,8 @@ projects = {\
     'react':['Webdevelopment/React/','npx create-react-app '+pro_name],\
     'electron':['electron/','npx create-electron-app@latest '+pro_name],\
     'docker':['docker/','cmd'],\
-    'python':['Python/','mkdir '+pro_name+' && cd '+pro_name+' touch main.py'],\
-    'bash':['bash/','mkdir '+pro_name+' && cd '+pro_name+' touch script.sh && echo "#!/bin/bash" >> script.sh'],\
+    'python':['Python/','mkdir '+pro_name+' && cd '+pro_name+' && touch main.py'],\
+    'bash':['bash/','mkdir '+pro_name+' && cd '+pro_name+' && touch script.sh && echo "#!/bin/bash" >> script.sh'],\
     'cpp':['cpp/', 'git clone https://github.com/SaracenRhue/cpp-boilerplate.git '+pro_name]\
         }
 
