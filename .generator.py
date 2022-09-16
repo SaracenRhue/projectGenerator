@@ -1,6 +1,6 @@
 from os import system as cmd
 
-path = '/Users/richardkammermeier/Nextcloud/Programming/'
+path = './Nextcloud/Programming/'
 
 cmd('echo "\x1b[31m"') # Red
 cmd('clear')
