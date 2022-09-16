@@ -2,7 +2,7 @@
 
 This tool generates boilerplate code for multiple project types.
 
-<img src="https://raw.githubusercontent.com/openframeworks/projectGenerator/master/bin/data/projectGenerator.png" width="400">
+<img src="https://github.com/SaracenRhue/projectGenerator/raw/main/icon.png" width="300">
 
 ## Setup
 
