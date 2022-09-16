@@ -2,11 +2,17 @@
 
 This tool generates boilerplate code for multiple project types.
 
+<img src="https://raw.githubusercontent.com/openframeworks/projectGenerator/master/bin/data/projectGenerator.png" width="400">
+
 ## Setup
 
 ```bash
 bash -c "$(https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/setup.sh)"
 ```
+
+## Usage
+
+Just type `pg` in your terminal and follow the prompts.
 
 ## Features
 
