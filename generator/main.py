@@ -24,7 +24,7 @@ projects = {\
     'python':['Python/','mkdir '+pro_name+' && cd '+pro_name+' && touch main.py'],\
     'bash':['bash/','mkdir '+pro_name+' && cd '+pro_name+' && touch script.sh && echo "#!/bin/bash" >> script.sh'],\
     'cpp':['cpp/', 'git clone https://github.com/SaracenRhue/cpp-boilerplate.git '+pro_name],\
-    'jekyll':['jekyll/', 'jekyll new '+pro_name+' && cd '+pro_name+' && code . && bundle exec jekyll serve']\
+    'jekyll':['jekyll/', 'jekyll new '+pro_name+' && cd '+pro_name+' && bundle update --bundler && bundle add webrick && bundle install --redownload && code . && bundle exec jekyll serve']\
         }
 
 #project types
