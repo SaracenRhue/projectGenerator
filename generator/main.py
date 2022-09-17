@@ -1,5 +1,4 @@
 from os import system as cmd
-import json
 
 path = './Nextcloud/Programming/'
 
@@ -27,10 +26,7 @@ projects = {\
     'cpp':['cpp/', 'git clone https://github.com/SaracenRhue/cpp-boilerplate.git '+pro_name]\
         }
 
-
-f = open('./data.json')
-data = json.load(f)
-print(data)
+#project types
 keys = list(projects.keys()) #array of dict keys
 
 for item in keys:
