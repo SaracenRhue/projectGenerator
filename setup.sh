@@ -1,6 +1,6 @@
 #!/bin/bash
 
- #clear
+clear
     cat<<EOF
     First install or update?:
      (0) install
