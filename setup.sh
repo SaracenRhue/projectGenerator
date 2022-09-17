@@ -9,7 +9,7 @@ EOF
     read -n1 -s
     case "$REPLY" in
         "0")cd
-            mkdir .prjectGenerator
+            mkdir .projectGenerator
             cd .prjectGenerator
             wget https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/main.py
             cd
