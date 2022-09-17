@@ -10,7 +10,7 @@ EOF
     case "$REPLY" in
         "0")cd
             mkdir .projectGenerator
-            cd .prjectGenerator
+            cd .projectGenerator
             wget https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/main.py
             cd
             echo "alias pg='python3 .projectGenerator/main.py'" >> ~/.bashrc
@@ -19,7 +19,7 @@ EOF
             sleep 3
             nano .projectGenerator/main.py
             ;;
-        "1")cd .prjectGenerator
+        "1")cd .projectGenerator
             wget https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/main.py
             ;;
      * )  echo "invalid option" ;;
