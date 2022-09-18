@@ -26,3 +26,7 @@ create boilerplates for:
 * React projects
 * NodeJS projects
 * elecron projects
+
+## Customization
+
+You can add or change paths and setup commands in the `.projectGenerator/config.yml` file.
