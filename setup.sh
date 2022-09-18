@@ -20,6 +20,8 @@ EOF
             echo "please set the 'main_path' variable to your project folder in the config file"
             sleep 3
             nano .projectGenerator/config.yml
+            source ~/.zshrc
+            source ~/.bashrc
             ;;
         "1")cd .projectGenerator
             rm -rf *
@@ -29,5 +31,10 @@ EOF
      * )  echo "invalid option" ;;
     esac
     sleep 1
+    
+echo " "
+echo "  __  __      ___ "
+echo " /  )/  )/| )(_   "
+echo "/(_/(__// |/ /__  "
 
 
