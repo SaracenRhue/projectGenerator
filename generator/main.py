@@ -1,10 +1,10 @@
 import yaml
 from os import system
-import sys
+# import sys
 
-arguments = sys.argv #returns a list of arguments
-arguments.pop(0) #remove the first argument (the script name)
-remote = len(arguments)
+# arguments = sys.argv #returns a list of arguments
+# arguments.pop(0) #remove the first argument (the script name)
+# remote = len(arguments)
 
 system('echo "\x1b[31m"') # Red
 system('clear')
@@ -20,16 +20,16 @@ pro_name = str(input('> '))
 
 #get project types and path from yaml file
 
-if remote == 0:
-    with open('.projectGenerator/config.yml', 'r') as file:
-        config = yaml.safe_load(file)
-        projects = config['projects']
-        main_path = config['main_path']
-elif remote == 1:
-    with open('https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/config.yml', 'r') as file:
-        config = yaml.safe_load(file)
-        projects = config['projects']
-        main_path = arguments[0]
+# if remote == 0:
+with open('.projectGenerator/config.yml', 'r') as file:
+    config = yaml.safe_load(file)
+    projects = config['projects']
+    main_path = config['main_path']
+# elif remote == 1:
+#     with open('https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/config.yml', 'r') as file:
+#         config = yaml.safe_load(file)
+#         projects = config['projects']
+#         main_path = arguments[0]
 
 
 #project types
