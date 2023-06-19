@@ -53,7 +53,8 @@ system('echo "\x1b[35m"') # Magenta
 system('cd '+path+' && '+create_cmd)
 
 if 'github' in create_cmd:
-    system('rm -rf '+path+pro_name+'/LICENSE') #remove license file
+    system('rm -rf '+path+pro_name+'/LICENSE') # remove license file
+    system('rm -rf '+path+pro_name+'/.git') # remove git folder
 
 system('code ' +path+pro_name) #open in VS Code
 
