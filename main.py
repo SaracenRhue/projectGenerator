@@ -20,16 +20,10 @@ pro_name = str(input('> '))
 
 #get project types and path from yaml file
 
-# if remote == 0:
 with open('.projectGenerator/config.yml', 'r') as file:
     config = yaml.safe_load(file)
     projects = config['projects']
     main_path = config['main_path']
-# elif remote == 1:
-#     with open('https://raw.githubusercontent.com/SaracenRhue/projectGenerator/main/generator/config.yml', 'r') as file:
-#         config = yaml.safe_load(file)
-#         projects = config['projects']
-#         main_path = arguments[0]
 
 
 #project types
@@ -46,17 +40,17 @@ pro_type = projects.get(pro_type)
 
 
 path = main_path + pro_type['path']
-create_cmd = pro_type['cmd']
+create_cmd = ' && '.join(pro_type['cmd'])
 create_cmd = create_cmd.replace('pro_name', pro_name)
 
 system('echo "\x1b[35m"') # Magenta
-system('cd '+path+' && '+create_cmd)
+system(f'cd {path} && {create_cmd}')
 
 if 'github' in create_cmd:
-    system('rm -rf '+path+pro_name+'/LICENSE') # remove license file
-    system('rm -rf '+path+pro_name+'/.git') # remove git folder
+    system(f'rm -rf {path}{pro_name}/LICENSE') # remove license file
+    system(f'rm -rf {path}{pro_name}/.git') # remove git folder
 
-system('code ' +path+pro_name) #open in VS Code
+system(f'code {path}{pro_name}') #open in VS Code
 
 system('echo "\x1b[32m"') # Green
 print("  __  __      ___ ")

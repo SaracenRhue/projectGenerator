@@ -1,0 +1,30 @@
+main_path: ~/Gitea/
+projects:
+  static site:
+    path: ''
+    cmd: [git clone https://github.com/SaracenRhue/HTML-boilerplate.git pro_name]
+  nodejs:
+    path: ''
+    cmd: [mkdir pro_name, cd pro_name, touch app.js, npm init -y]
+  react:
+    path: ''
+    cmd: [npx create-react-app pro_name]
+  electron:
+    path: ''
+    cmd: [npx create-electron-app@latest pro_name]
+  docker:
+    path: ''
+    cmd: [mkdir pro_name, cd pro_name, touch Dockerfile, touch .dockerignore]
+  python:
+    path: ''
+    cmd: [mkdir pro_name, cd pro_name, touch main.py]
+  bash:
+    path: ''
+    cmd: [mkdir pro_name, cd pro_name, touch script.sh, echo "#!/bin/bash" >> script.sh]
+  cpp:
+    path: ''
+    cmd: [git clone https://github.com/SaracenRhue/cpp-boilerplate.git pro_name]
+  jekyll:
+    path: ''
+    cmd: [jekyll new pro_name, cd pro_name, bundle update --bundler, bundle add webrick, bundle install --redownload, code ., bundle exec jekyll serve]
+
